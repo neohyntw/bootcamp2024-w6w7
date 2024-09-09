@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 120%;
+    @apply tracking-widest;
+  }
+
+  .fs-1 {
+    line-height: 150%;
+    letter-spacing: 0.5;
+  }
+
+  h1 {
+    @apply text-[40px] font-bold;
+  }
+  h2 {
+    @apply text-[32px] font-bold;
+  }
+  h3 {
+    @apply text-[28px] font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold lg:text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+  h6 {
+    @apply font-bold leading-[120%];
+  }
+
+  .sidemenu ul li {
+    @apply mb-6 p-3 lg:mb-0;
+  }
+  .sidemenu ul li:last-child {
+    @apply mb-0;
+  }
+
+  .theme-card {
+    @apply mb-2 block h-[84px] w-full justify-center rounded-br-[20px] rounded-tl-[20px] bg-cover bg-bottom bg-no-repeat text-center align-middle text-white lg:h-[200px] lg:w-[calc(25%-24px)];
+  }
+  .theme-card h6 {
+    @apply m-auto leading-[84px] lg:leading-[200px];
+  }
+
+  .article-pagination li:first-child::after {
+    content: '/';
+    @apply px-[10px];
+  }
+  .swiper-btn::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    @apply order-2 flex-grow bg-gray-500;
+  }
+  .article-list::-webkit-scrollbar,
+  .recommend::-webkit-scrollbar,
+  .lifestyle-card::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  .article-list,
+  .lifestyle-card {
+    scroll-behavior: smooth;
+  }
+  .promo-list li {
+    @apply mb-4;
+  }
+  .promo-list li::before {
+    font-family: 'Material Icons';
+    content: 'check';
+    @apply mr-3 inline-block w-3;
+  }
+  .promo-list li:last-child,
+  .recommend-tab li:last-child,
+  .card-body li:last-child {
+    @apply mb-0;
+  }
+  .recommend-tab li {
+    @apply relative mb-6 rounded-[4px] hover:bg-accent-100;
+    transition: background-color 0.2s linear;
+  }
+
+  .recommend-tab li:has(input:checked) {
+    @apply bg-accent-100;
+  }
+  .recommend-tab li input {
+    @apply hidden;
+  }
+  .recommend-tab li label {
+    @apply block p-4 font-bold hover:cursor-pointer;
+  }
+  .recommend-tab li label::before {
+    content: '•';
+    @apply mr-4;
+  }
+  .card-text li {
+    @apply mb-2 font-semibold text-gray-500 lg:mb-5;
+  }
+  .card-text li::before {
+    content: '|';
+    @apply mx-2;
+  }
+  .tag-list li {
+    @apply rounded-[4px] bg-primary-300 px-2 py-1 text-xs tracking-widest text-primary-400 lg:text-base;
+  }
+  .card-gallery li {
+    flex-grow: 1;
+  }
+
+  .card-gallery li img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card-text li {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap tracking-widest;
+  }
+
+  .recommend {
+    @apply overflow-scroll;
+  }
+  /* .recommend-card.active {
+    @apply block;
+  } */
+  .recommend-card {
+    @apply lg:hidden;
+  }
+
+  ul:has(#tab_1:checked) ~ div[data-tab='tab_1'],
+  ul:has(#tab_2:checked) ~ div[data-tab='tab_2'],
+  ul:has(#tab_3:checked) ~ div[data-tab='tab_3'],
+  ul:has(#tab_4:checked) ~ div[data-tab='tab_4'],
+  ul:has(#tab_5:checked) ~ div[data-tab='tab_5'] {
+    @apply block;
+  }
+  .lifestyle-card {
+    @apply overflow-x-scroll;
+  }
+  .lifestyle-card .card-text {
+    @apply lg:text-xl;
+  }
+  .lifestyle-card .card {
+    @apply mb-6 w-full min-w-[416px] lg:mb-0;
+  }
+
+  .article-list li {
+    @apply relative min-w-[306px] lg:min-w-fit lg:max-w-[306px];
+  }
+  .article-list li .article-tag {
+    @apply absolute left-4 top-0 -translate-y-1/2;
+  }
+  .article-list li .article-tag::before {
+    font-family: 'Material Icons';
+    content: 'play_arrow';
+    @apply mr-2 inline-block h-5 align-text-bottom text-xl leading-none;
+  }
+
+  .breadcrumb li:first-child::after {
+    content: '/';
+    @apply px-[6px];
+  }
+
+  .timeline > li {
+    @apply mb-20 items-start lg:flex;
+  }
+  .timeline > li:last-child {
+    @apply mb-0;
+  }
+
+  .timeline .year {
+    @apply mb-6 mr-[72px] inline-block bg-primary-400 p-3 text-gray-100;
+  }
+
+  .details-list h4 {
+    @apply mr-4 min-w-[50px] border-r border-gray-300 text-gray-400 lg:min-w-16;
+  }
+  .details-list h4::after {
+    content: '月';
+    @apply text-base;
+  }
+
+  .details-list {
+    @apply mb-6 flex;
+  }
+
+  .sidemenu {
+    @apply hidden;
+  }
+  .navbar:has(#menu-sm:checked) .sidemenu {
+    @apply block lg:flex;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Noto Serif TC', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap')
+      format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap')
+      format('woff2');
+  }
+}
