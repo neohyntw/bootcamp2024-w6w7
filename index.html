@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" crossorigin src="/bootcamp2024-w6w7/assets/main-Cb_-7GjU.js"></script>
+    <link rel="stylesheet" crossorigin href="/bootcamp2024-w6w7/assets/main-eJ6qi5od.css">
+  </head>
+
+  <body>
+    <div class="bg-primary-100">
+      <header class="mb-12 lg:container">
+      
+            <nav class="navbar lg:container flex justify-between px-3 py-5 items-center bg-primary-100 relative border-b border-b-gray-300 lg:mb-20">
+  <a href="index.html"><img src="data:image/svg+xml,%3csvg%20width='96'%20height='28'%20viewBox='0%200%2096%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.26784%203.72464L13.2143%2022.4366L21.5179%203.72464H23.4107L12.6607%2027.7931H11.625L0.0714111%203.72464H4.26784ZM28.8286%209.77281L31.3822%208.74407H32.4357V27.2432H28.8286V9.77281ZM28.5428%202.12836C28.5428%201.84457%2028.5964%201.57853%2028.7035%201.33021C28.8107%201.0819%2028.9595%200.863156%2029.15%200.673963C29.3405%200.484774%2029.5607%200.33697%2029.8107%200.230552C30.0607%200.124132%2030.3286%200.0709229%2030.6143%200.0709229C30.9%200.0709229%2031.1678%200.124132%2031.4178%200.230552C31.6679%200.33697%2031.8881%200.484774%2032.0785%200.673963C32.269%200.863156%2032.4178%201.0819%2032.525%201.33021C32.6321%201.57853%2032.6857%201.84457%2032.6857%202.12836C32.6857%202.41214%2032.6321%202.67818%2032.525%202.9265C32.4178%203.17481%2032.269%203.39355%2032.0785%203.58275C31.8881%203.77194%2031.6679%203.91974%2031.4178%204.02616C31.1678%204.13258%2030.9%204.18579%2030.6143%204.18579C30.3286%204.18579%2030.0607%204.13258%2029.8107%204.02616C29.5607%203.91974%2029.3405%203.77194%2029.15%203.58275C28.9595%203.39355%2028.8107%203.17481%2028.7035%202.9265C28.5964%202.67818%2028.5428%202.41214%2028.5428%202.12836ZM41.7464%209.08106L48.2107%2022.8269L54.4072%209.08106H56.05L47.8178%2027.4383H46.5678L37.9428%209.08106H41.7464ZM63.9678%208.74407H64.5214L65.0036%2012.451C65.2893%2011.9071%2065.6464%2011.4104%2066.075%2010.9611C66.5035%2010.5118%2066.9738%2010.1216%2067.4857%209.79052C68.0095%209.45943%2068.5571%209.20524%2069.1285%209.02786C69.7119%208.83867%2070.3012%208.74407%2070.8964%208.74407C71.4321%208.74407%2071.9559%208.81498%2072.4679%208.95687C72.9917%209.09876%2073.4798%209.32345%2073.9321%209.63092L72.7892%2012.6638C72.5511%2012.4037%2072.3012%2012.1968%2072.0393%2012.0431C71.7774%2011.8775%2071.5095%2011.7533%2071.2357%2011.6706C70.9619%2011.576%2070.6821%2011.5169%2070.3964%2011.4932C70.1107%2011.4695%2069.825%2011.4577%2069.5393%2011.4577C69.0869%2011.4577%2068.6404%2011.5228%2068.2%2011.6528C67.7714%2011.7829%2067.3607%2011.978%2066.9678%2012.2382C66.575%2012.4865%2066.2119%2012.8116%2065.8785%2013.2136C65.5452%2013.6039%2065.2536%2014.065%2065.0036%2014.5971V27.2432H61.3786V9.73732L63.9678%208.74407ZM86.7604%2027.6334C85.5223%2027.6334%2084.3558%2027.4028%2083.2609%2026.9417C82.1775%2026.4806%2081.2312%2025.8539%2080.4213%2025.0616C79.6122%2024.2694%2078.9691%2023.3412%2078.4929%2022.277C78.0282%2021.201%2077.7966%2020.0599%2077.7966%2018.8539C77.7966%2017.3995%2078.0107%2016.0574%2078.4396%2014.8277C78.8678%2013.5861%2079.475%2012.5161%2080.2606%2011.6174C81.0461%2010.7188%2081.987%2010.0152%2083.0819%209.50673C84.1889%208.99827%2085.4217%208.74407%2086.7787%208.74407C87.9688%208.74407%2089.0644%208.95687%2090.064%209.38255C91.0644%209.79642%2091.9215%2010.3581%2092.6354%2011.0675C93.3615%2011.7652%2093.9215%2012.5752%2094.3139%2013.4974C94.7192%2014.4197%2094.9211%2015.3834%2094.9211%2016.3885H81.2968C81.2968%2017.6064%2081.4514%2018.7356%2081.7607%2019.7761C82.0823%2020.8167%2082.5288%2021.7153%2083.1002%2022.4721C83.6716%2023.2288%2084.3497%2023.8201%2085.136%2024.2458C85.9215%2024.6715%2086.7848%2024.8843%2087.7249%2024.8843C88.5105%2024.8843%2089.2663%2024.7601%2089.9931%2024.5118C90.7192%2024.2517%2091.3737%2023.9147%2091.9573%2023.5008C92.5524%2023.087%2093.0583%2022.614%2093.475%2022.0819C93.8918%2021.5498%2094.1836%2021%2094.3497%2020.4324L95.4034%2020.8936C95.1413%2021.8277%2094.7192%2022.7027%2094.1356%2023.5185C93.552%2024.3344%2092.8678%2025.0498%2092.0823%2025.6647C91.3082%2026.2677%2090.4632%2026.7466%2089.5467%2027.1013C88.6301%2027.456%2087.7013%2027.6334%2086.7604%2027.6334ZM90.368%2014.9341C90.368%2014.2483%2090.243%2013.6098%2089.9931%2013.0185C89.7547%2012.4274%2089.4217%2011.9189%2088.9928%2011.4932C88.5646%2011.0557%2088.064%2010.7128%2087.4926%2010.4645C86.9211%2010.2162%2086.3086%2010.092%2085.6533%2010.092C85.1063%2010.092%2084.5821%2010.2162%2084.0823%2010.4645C83.5825%2010.701%2083.136%2011.038%2082.7428%2011.4755C82.3497%2011.9012%2082.0228%2012.4096%2081.7607%2013.0008C81.5108%2013.592%2081.3615%2014.2306%2081.3143%2014.9163L90.368%2014.9341Z'%20fill='%23343A40'/%3e%3c/svg%3e" alt="Vivre" srcset=""></a>
+ 
+
+  <div class="bg-primary-100 sidemenu absolute top-0 w-full l-0 -ms-3 min-h-screen lg:flex flex-col px-3 lg:flex-row lg:static lg:w-auto lg:min-h-fit lg:flex-grow lg:justify-between lg:items-center lg:ml-9">
+    <button type="button" id="closeMenu" class="ml-auto h-11 w-11 mt-2 mb-6 lg:hidden"><span class="material-symbols-rounded">close</span></button>
+    
+    <form class="w-full mx-auto lg:max-w-[276px] lg:mr-auto lg:ml-0">   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">搜尋文章</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 end-0 flex items-center pe-3 pointer-events-none">
+            <svg class="w-4 h-4 text-accent-200 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="text" id="default-search" class="mb-6 block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-acccent-200 focus:border-acccent-200 lg:mb-0 focus-visible:outline-accent-200" placeholder="搜尋文章" />
+      </div>
+      
+    </form>
+
+    <ul class="mb-10 font-bold text-gray-500 lg:flex lg:mb-0 lg:items-center">
+        <li><a href="#">所有文章</a></li>
+        <li><a href="#">訂閱方案</a></li>
+        <li><a href="aboutus.html">關於我們</a></li>
+    </ul>
+
+    <button type="button" class="bg-accent-200 text-white px-5 py-3 rounded-full flex text-center lg:h-min lg:ml-5 w-full lg:w-fit"><h6 class="mx-auto">登入 / 註冊</h6></button>
+  </div>
+
+   <span class="lg:hidden" href="#">
+      <input type="checkbox" id="menu-sm" class="hidden w-full h-full bg-slate-500">
+      <label for="menu-sm" class="material-symbols-rounded h-6 w-6 text-2xl hover:cursor-pointer">menu</label>
+  </span>
+</nav>
+            <div class="lg:container bg-[url('../assets/images/banner-sm.png')] lg:bg-[url('../assets/images/banner.png')] min-h-[551px] lg:min-h-[621px] w-full bg-cover bg-center text-white flex flex-col items-center py-12 px-5 justify-end lg:items-start lg:justify-center">
+              <h6 class="mt-auto mb-2 lg:mt-0">獻給新世代的生活風格誌</h6>
+              <h3 class="mb-5">一起探索生活的無限可能</h3>
+              <a href="#" class="bg-accent-200 text-white px-5 py-3 rounded-full flex items-center"><h6 class="mr-3">馬上訂閱</h6><span class="material-symbols-rounded">
+      arrow_forward
+      </span></a>
+            </div>
+      
+          </header>
+      <div class="container">
+
+          
+
+          <section class="py-12 lg:py-20" data-aos="fade-up">
+            <h4 class="mb-6">熱門主題</h4>
+            <div class="lg:flex lg:gap-6 lg:flex-wrap lg:justify-between">
+
+              <a href="#" class="bg-[url('../assets/images/theme-1-sm.png')] theme-card"><h6 class="">城市漫遊者</h6></a>
+              <a href="#" class="bg-[url('../assets/images/theme-3-sm.png')] lg:bg-[url('../assets/images/theme-3.png')] theme-card"><h6 class="">秘境尋蹤人</h6></a>
+               <a href="#" class="bg-[url('../assets/images/theme-5-sm.png')] lg:bg-[url('../assets/images/theme-5.png')] theme-card"><h6 class="">品味設計家</h6></a>
+              <a href="#" class="bg-[url('../assets/images/theme-8-sm.png')] lg:bg-[url('../assets/images/theme-8.png')]  theme-card"><h6 class="">美食探險記</h6></a>
+               <a href="#" class="bg-[url('../assets/images/theme-2-sm.png')] lg:bg-[url('../assets/images/theme-2.png')] theme-card"><h6 class="">美學建築誌</h6></a>
+              <a href="#" class="bg-[url('../assets/images/theme-4-sm.png')] lg:bg-[url('../assets/images/theme-4.png')] theme-card"><h6 class="">慢活生活行</h6></a>
+               <a href="#" class="bg-[url('../assets/images/theme-6-sm.png')] lg:bg-[url('../assets/images/theme-6.png')] theme-card"><h6 class="">工藝匠心賞</h6></a>
+              <a href="#" class="bg-[url('../assets/images/theme-7-sm.png')] lg:bg-[url('../assets/images/theme-7.png')] theme-card"><h6 class="">時尚先鋒派</h6></a>
+
+            </div>
+          </section>
+
+          <section class="top-article py-12 lg:py-20 flex flex-col-reverse lg:flex-row">
+             <h4 class="mb-6 lg:hidden order-1">精選文章</h4>
+            <div class="lg:w-1/3 flex lg:flex-col">
+
+              <h4 class="mb-6 lg:block hidden">精選文章</h4>
+
+              <ul class="article-pagination flex lg:mt-auto lg:mb-0 leading-8 my-auto">
+                <li>1</li>
+                <li>5</li>
+              </ul>
+
+              <div class="swiper-btn flex justify-between w-[232px] items-center ml-auto lg:ml-0">
+                <button role="button" class="px-4 py-1 border border-gray-500 rounded-full order-1 mr-5 scroll-left"><span class="material-symbols-rounded text-2xl align-middle text-gray-400">west</span></button>
+                <button role="button" class="px-4 py-1 border border-gray-500 rounded-full order-3 ml-5 scroll-right"><span class="material-symbols-rounded text-2xl align-middle text-gray-400">east</span></button>
+              </div>
+
+            </div>
+            <ul class="article-list flex gap-x-6 lg:gap-x-12 overflow-x-scroll lg:w-2/3" data-aos="fade-up">
+              <li class="w-1/2 border-b border-b-gray-500 pb-6 flex flex-col min-w-[324px]">
+                <picture>
+                  <source srcset="/bootcamp2024-w6w7/assets/articles-1-sm-BLafNYv_.png" media="(max-width:992px)">
+                  <img src="/bootcamp2024-w6w7/assets/articles-1-DwxdIZaG.png" alt="article 1" class="w-full">
+                </picture>
+                <div class="desc my-6">
+                  <h5 class="mb-2 font-bold">私人島嶼的露營奇遇記</h5>
+                  <p class="text-gray-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">Read More</a>
+                </div>
+              </li>
+
+               <li class="w-1/2 border-b border-b-gray-500 pb-6 flex flex-col min-w-[324px]">
+                <picture>
+                  <source srcset="/bootcamp2024-w6w7/assets/articles-2-sm-l2QAh0xQ.png" media="(max-width:992px)">
+                  <img src="/bootcamp2024-w6w7/assets/articles-2-CPJEGnm1.png" alt="article 1" class="w-full">
+                </picture>
+                <div class="desc my-6">
+                  <h5 class="mb-2 font-bold">窺探米其林三星主廚的絕密手藝</h5>
+                  <p class="text-gray-400">
+                   在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                </div>
+                <div class="flex justify-between items-center">
+
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">Read More</a>
+                  <a href="" class=" text-primary-400 bg-primary-300 px-2 py-1 rounded-[4px]">會員專屬</a>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+      </div>
+    </div>
+    <div class="event-promo bg-primary-200   text-center">
+
+      <div class="container relative py-12 lg:py-20 overflow-hidden">
+
+        <h4 class="text-accent-200 lg:text-primary-400 font-bold lg:mb-5 mb-3">\ 母親節強檔活動 /</h4>
+        <h2 class="text-gray-500 lg:mb-5 mb-6">家庭訂閱方案限時 7 折</h2>
+        <ul class="text-left mx-auto w-fit text-gray-400 promo-list lg:mb-10 mb-6">
+          <li>每月最新文章無限閱讀</li>
+          <li>專屬會員限定內容</li>
+          <li>定期電子報</li>
+          <li>年度精選禮物</li>
+          <li>24 /7 優先客戶服務</li>
+          <li>為每個成員量身打造專屬行程</li>
+        </ul>
+        <button type="button" class="bg-accent-200 text-white px-5 py-3 rounded-full flex items-center mx-auto"><h6>我想了解</h6></button>
+      <img src="data:image/png;base64,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" alt="" class="absolute bottom-0 left-0 lg:block hidden">
+       <picture class="absolute bottom-0 right-0 -mb-1 translate-x-1/4 sm:translate-x-0">
+          <source srcset="data:image/png;base64,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" media="(max-width:992px)">
+          <img src="/bootcamp2024-w6w7/assets/bg-2-DUm2Kc0L.png" alt="bg-2" >
+        </picture>
+      </div>
+      
+      
+      
+    </div>
+    <div class="bg-primary-100">
+      <div class="container">
+        <section class="py-12 lg:py-20">
+            <h4 class="mb-6">大家都在看</h4>
+            <div class="recommend flex gap-x-6" data-aos="fade-up"
+     data-aos-duration="400">
+
+              <ul class="recommend-tab min-w-[306px] bg-white p-6 rounded-xl lg:block hidden">
+                <li class=" text-gray-600">
+                  <input type="radio" id="tab_1" name="recommend-check" value="酒精路跑地圖" checked />
+                  <label for="tab_1">酒精路跑地圖</label>
+                </li>
+                <li>
+                  <input type="radio" id="tab_2" name="recommend-check" value="台北拉麵圖鑑" />
+                  <label for="tab_2">台北拉麵圖鑑</label>
+                </li>
+                <li>
+                   <input type="radio" id="tab_3" name="recommend-check" value="海島自由行" />
+                  <label for="tab_3">海島自由行</label>
+                </li>
+                <li>
+                   <input type="radio" id="tab_4" name="recommend-check" value="短天數出國推薦" />
+                  <label for="tab_4">短天數出國推薦</label>
+                </li>
+                <li>
+                  <input type="radio" id="tab_5" name="recommend-check" value="週末露營趣" />
+                  <label for="tab_5">週末露營趣</label>
+                </li>
+              </ul>
+              
+              <div data-tab="tab_1" class="recommend-card bg-white p-4 lg:p-10 lg:rounded-none rounded-xl w-[324px] lg:w-full">
+                <div class="card-body lg:p-6">
+                  <h4 class="text-accent-200 lg:mb-6 mb-3">酒精路跑地圖</h4>
+                  <ul class="card-text mb-4 lg:mb-0">
+                    <li>城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                    <li>你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                    <li>台南老宅手工酒藏,尋味百年人文釀意</li>
+                  </ul>
+                  <img src="/bootcamp2024-w6w7/assets/hots-1-sm-BJEeiUhx.png" class="w-full lg:hidden mb-4" alt="">
+                </div>
+                
+                <ul class="card-gallery lg:flex p-4 gap-x-1 hidden">
+                  <li class="rounded-l-2xl overflow-hidden"><img src="/bootcamp2024-w6w7/assets/hots-1-BF-P5ZYH.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-2-ZHrD-Pii.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-3-C4uCCzar.png" alt=""></li>
+                  <li class="rounded-r-2xl overflow-hidden "><img src="/bootcamp2024-w6w7/assets/hots-4-ByJJ8n9h.png" alt=""></li>
+                </ul>
+
+                <div class="card-footer lg:p-6 lg:flex justify-between font-semibold text-center">
+                  <ul class="tag-list flex items-center lg:gap-x-4 gap-x-2.5 mb-6 lg:mb-0">
+                    <li><a href="#">#夜貓行程</a></li>
+                    <li><a href="#">#barhopping</a></li>
+                    <li><a href="#">#全台酒吧</a></li>
+                  </ul>
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+                </div>
+
+              </div>
+
+               <div data-tab="tab_2" class="recommend-card bg-white p-4 lg:p-10 lg:rounded-none rounded-xl w-[324px] lg:w-full">
+                <div class="card-body lg:p-6">
+                  <h4 class="text-accent-200 lg:mb-6 mb-3">台北拉麵圖鑑</h4>
+                  <ul class="card-text mb-4 lg:mb-0">
+                    <li>城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                    <li>你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                    <li>台南老宅手工酒藏,尋味百年人文釀意</li>
+                  </ul>
+                  <img src="/bootcamp2024-w6w7/assets/hots-3-sm-CJerYy1H.png" class="w-full lg:hidden mb-4" alt="">
+                </div>
+                
+                <ul class="card-gallery lg:flex p-4 gap-x-1 hidden">
+                  <li class="rounded-l-2xl overflow-hidden"><img src="/bootcamp2024-w6w7/assets/hots-1-BF-P5ZYH.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-2-ZHrD-Pii.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-3-C4uCCzar.png" alt=""></li>
+                  <li class="rounded-r-2xl overflow-hidden "><img src="/bootcamp2024-w6w7/assets/hots-4-ByJJ8n9h.png" alt=""></li>
+                </ul>
+
+                <div class="card-footer lg:p-6 lg:flex justify-between font-semibold text-center">
+                  <ul class="tag-list flex items-center lg:gap-x-4 gap-x-2.5 mb-6 lg:mb-0">
+                    <li><a href="#">#雞白湯</a></li>
+                    <li><a href="#">#拉麵</a></li>
+                    <li><a href="#">#台北美食</a></li>
+                  </ul>
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+                </div>
+
+              </div>
+
+              <div data-tab="tab_3" class="recommend-card bg-white p-4 lg:p-10 lg:rounded-none rounded-xl w-[324px] lg:w-full">
+                <div class="card-body lg:p-6">
+                  <h4 class="text-accent-200 lg:mb-6 mb-3">海島自由行</h4>
+                  <ul class="card-text mb-4 lg:mb-0">
+                    <li>私島慢活島嶼生活 - 在熱帶天堂品...</li>
+                    <li>海島漂流記 - 在陽光、沙灘和比基...</li>
+                    <li>島嶼蹤跡 - 揭開加勒比海上世外桃...</li>
+                  </ul>
+                  <img src="/bootcamp2024-w6w7/assets/hots-4-sm-Cmw8tsd6.png" class="w-full lg:hidden mb-4" alt="">
+                </div>
+                
+                <ul class="card-gallery lg:flex p-4 gap-x-1 hidden">
+                  <li class="rounded-l-2xl overflow-hidden"><img src="/bootcamp2024-w6w7/assets/hots-1-BF-P5ZYH.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-2-ZHrD-Pii.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-3-C4uCCzar.png" alt=""></li>
+                  <li class="rounded-r-2xl overflow-hidden "><img src="/bootcamp2024-w6w7/assets/hots-4-ByJJ8n9h.png" alt=""></li>
+                </ul>
+
+                <div class="card-footer lg:p-6 lg:flex justify-between font-semibold text-center">
+                  <ul class="tag-list flex items-center lg:gap-x-4 gap-x-2.5 mb-6 lg:mb-0">
+                    <li><a href="#">#熱帶國家</a></li>
+                    <li><a href="#">#海邊</a></li>
+                    <li><a href="#">#無敵海景</a></li>
+                  </ul>
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+                </div>
+
+              </div>
+
+              <div data-tab="tab_4" class="recommend-card bg-white p-4 lg:p-10 lg:rounded-none rounded-xl w-[324px] lg:w-full">
+                <div class="card-body lg:p-6">
+                  <h4 class="text-accent-200 lg:mb-6 mb-3">短天數出國推薦</h4>
+                  <ul class="card-text mb-4 lg:mb-0">
+                    <li>72小時東京遊走 - 當個時尚東京通</li>
+                    <li>48小時曼谷遊玩全攻略</li>
+                    <li>三天兩夜賞櫻微醺東京</li>
+                  </ul>
+                  <img src="/bootcamp2024-w6w7/assets/hots-5-sm-DEztJnoS.png" class="w-full lg:hidden mb-4" alt="">
+                </div>
+                
+                <ul class="card-gallery lg:flex p-4 gap-x-1 hidden">
+                  <li class="rounded-l-2xl overflow-hidden"><img src="/bootcamp2024-w6w7/assets/hots-1-BF-P5ZYH.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-2-ZHrD-Pii.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-3-C4uCCzar.png" alt=""></li>
+                  <li class="rounded-r-2xl overflow-hidden "><img src="/bootcamp2024-w6w7/assets/hots-4-ByJJ8n9h.png" alt=""></li>
+                </ul>
+
+                <div class="card-footer lg:p-6 lg:flex justify-between font-semibold text-center">
+                  <ul class="tag-list flex items-center lg:gap-x-4 gap-x-2.5 mb-6 lg:mb-0">
+                    <li><a href="#">#說走就走</a></li>
+                    <li><a href="#">#出國玩</a></li>
+                    <li><a href="#">#東亞</a></li>
+                  </ul>
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+                </div>
+
+              </div>
+
+              <div data-tab="tab_5" class="recommend-card bg-white p-4 lg:p-10 lg:rounded-none rounded-xl w-[324px] lg:w-full">
+                <div class="card-body lg:p-6">
+                  <h4 class="text-accent-200 lg:mb-6 mb-3">週末露營趣</h4>
+                  <ul class="card-text mb-4 lg:mb-0">
+                    <li>週末說走就走露營記</li>
+                    <li>城市野營日記</li>
+                    <li>和寵物去露營 - 大自然之旅的雙倍...</li>
+                  </ul>
+                  <img src="/bootcamp2024-w6w7/assets/hots-2-sm-CiMrSgkZ.png" class="w-full lg:hidden mb-4" alt="">
+                </div>
+                
+                <ul class="card-gallery lg:flex p-4 gap-x-1 hidden">
+                  <li class="rounded-l-2xl overflow-hidden"><img src="/bootcamp2024-w6w7/assets/hots-1-BF-P5ZYH.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-2-ZHrD-Pii.png" alt=""></li>
+                  <li><img src="/bootcamp2024-w6w7/assets/hots-3-C4uCCzar.png" alt=""></li>
+                  <li class="rounded-r-2xl overflow-hidden "><img src="/bootcamp2024-w6w7/assets/hots-4-ByJJ8n9h.png" alt=""></li>
+                </ul>
+
+                <div class="card-footer lg:p-6 lg:flex justify-between font-semibold text-center">
+                  <ul class="tag-list flex items-center lg:gap-x-4 gap-x-2.5 mb-6 lg:mb-0">
+                    <li><a href="#">#戶外</a></li>
+                    <li><a href="#">#露營控</a></li>
+                    <li><a href="#">#凹豆</a></li>
+                  </ul>
+                  <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+                </div>
+
+              </div>
+
+            </div>
+        </section>
+
+        <section class="lifestyle py-12 lg:py-20" data-aos="fade-up"
+     data-aos-duration="400">
+          <div class="flex mb-10">
+
+            <h4>品味生活</h4>
+            <div class="swiper-btn md:flex justify-between w-[232px] items-center ml-auto hidden">
+                <button role="button" class="px-4 py-1 border border-gray-500 rounded-full order-1 mr-5 scroll-left"><span class="material-symbols-rounded text-2xl align-middle text-gray-400">west</span></button>
+                <button role="button" class="px-4 py-1 border border-gray-500 rounded-full order-3 ml-5 scroll-right"><span class="material-symbols-rounded text-2xl align-middle text-gray-400">east</span></button>
+              </div>
+
+          </div>
+
+          <ul class="lifestyle-card md:flex gap-x-6">
+            <li class="card">
+              <h5 class="text-primary-400 text-[52px] font-bold lg:mb-9 mb-6 leading-normal">食.</h5>
+              <img src="/bootcamp2024-w6w7/assets/life-1-Dg5ZDKKl.png" class="lg:mb-9 mb-6 w-full" alt="">
+               <ul class="card-text lg:mb-9 mb-6">
+                <li>城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                <li>你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                <li>台南老宅手工酒藏,尋味百年人文釀意</li>
+              </ul>
+              <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold block text-center">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+            </li>
+
+            <li class="card">
+              <h5 class="text-primary-400 text-[52px] font-bold lg:mb-9 mb-6 leading-normal">藝.</h5>
+              <img src="/bootcamp2024-w6w7/assets/life-2-CiUlM3yQ.png" class="lg:mb-9 mb-6 w-full" alt="">
+               <ul class="card-text lg:mb-9 mb-6">
+                <li>解構教主級時裝設計大師的獨特美學</li>
+                <li>當代攝影師鏡頭中的光影離奇</li>
+                <li>帶你穿縮中世紀，夏季文藝復興展</li>
+              </ul>
+              <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold block text-center">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+            </li>
+
+            <li class="card">
+              <h5 class="text-primary-400 text-[52px] font-bold lg:mb-9 mb-6 leading-normal">旅.</h5>
+              <img src="/bootcamp2024-w6w7/assets/life-3-vvZgQduX.png" class="lg:mb-9 mb-6 w-full" alt="">
+               <ul class="card-text lg:mb-9 mb-6">
+                <li>遠離喧囂,偶探巴塔哥尼亞終界</li>
+                <li>東京深度六區,帶你細品極簡魅力</li>
+                <li>專賣奇珍異寶的東歐地下夜市</li>
+              </ul>
+              <a href="#" class="text-accent-200 text-base lg:text-xl py-2 font-semibold block text-center">View More<span class="material-symbols-rounded text-2xl align-middle text-accent-200 ml-3">east</span></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="bg-primary-200" data-aos="fade-up"
+     data-aos-duration="400">
+      <div class="container py-12 lg:py-20 lg:flex lg:items-center">
+        <div class="text-center lg:text-left lg:w-1/3 2xl:w-1/2">
+          <h5 class="mb-4 font-semibold text-gray-400">今天又不知道要去哪裡了嗎？</h5>
+          <h2 class="text-gray-500 mb-6">Vivre <span class="inline-block mt-2">給你意想不到的生活風格提案</span></h2>
+          <button type="button" class="bg-accent-200 text-white px-5 py-3 rounded-full flex items-center mx-auto lg:ml-0"><h6 class="mr-3">馬上訂閱</h6><span class="material-symbols-rounded">arrow_forward</span></button>
+        </div>
+
+        <ul class="flex article-list gap-x-6 overflow-x-scroll pt-[65px] lg:w-2/3 2xl:w-1/2 lg:gap-y-10 lg:flex-wrap lg:gap-x-0 lg:justify-evenly">
+          <li class="order-3 lg:order-2">
+              <a href="#" class=" font-semibold tracking-widest inset-0 flex justify-between w-full p-3 pb-4 text-white absolute items-end"><h6>山女孩的健行筆記</h6> <span class="material-symbols-rounded">arrow_forward</span></a>
+              <img src="/bootcamp2024-w6w7/assets/projects-1-BoUAF6SP.png" class="w-[306px]" alt="">
+            <span class="article-tag bg-white border border-accent-100 rounded text-accent-300 py-2 px-3 font-semibold">編輯推薦</span>
+          </li>
+
+          <li class="order-1 lg:mt-20">
+            <a href="#" class=" font-semibold tracking-widest inset-0 flex justify-between w-full p-3 pb-4 text-white absolute items-end"><h6>親子露營要帶什麼？</h6> <span class="material-symbols-rounded">arrow_forward</span></a>
+            <img src="/bootcamp2024-w6w7/assets/projects-2-BuCI4D1i.png" alt="">
+          <span class="article-tag bg-white border border-accent-100 rounded text-accent-300 py-2 px-3 font-semibold">人氣行程</span></li>
+          
+          <li class="order-4 lg:-mt-20">
+            <a href="#" class=" font-semibold tracking-widest inset-0 flex justify-between w-full p-3 pb-4 text-white absolute items-end"><h6>親子露營要帶什麼？</h6> <span class="material-symbols-rounded">arrow_forward</span></a>
+            <img src="/bootcamp2024-w6w7/assets/projects-3-462MgT6o.png" alt="">
+          <span class="article-tag bg-white border border-accent-100 rounded text-accent-300 py-2 px-3 font-semibold">熱門文章</span></li>
+          
+          <li class="order-2 lg:order-3">
+            <a href="#" class=" font-semibold tracking-widest inset-0 flex justify-between w-full p-3 pb-4 text-white absolute items-end"><h6>質感房間改造攻略！</h6> <span class="material-symbols-rounded">arrow_forward</span></a>
+            <img src="/bootcamp2024-w6w7/assets/projects-4-C3aQL9u8.png" alt="">
+          <span class="article-tag bg-white border border-accent-100 rounded text-accent-300 py-2 px-3 font-semibold">編輯推薦</span></li>
+        </ul>
+      </div>
+    </section>
+    <div class="container text-center justify-center" >
+    <div class="text-gray-500 flex flex-col py-12 lg:py-20 lg:flex-row lg:justify-between">
+      <h2 class="mb-4">想看什麼主題由你決定！</h2>
+      <span class="lg:text-right">
+        <h4 class=" mb-9 lg:mb-4">歡迎投稿與我們分享</h4>
+        <a href="#" class="bg-accent-200  text-white px-5 py-3 rounded-full inline-block"><h6>聯絡我們</h6></a>
+      </span>
+    </div>
+  </div>
+    <footer class="bg-primary-100 ">
+  <div class="container text-center justify-center">
+    <p class="border-t border-gray-300 py-5 lg:py-6 text-primary-400">&copy;Vivre 2024 All right Reserved</p>
+  </div>
+
+</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
